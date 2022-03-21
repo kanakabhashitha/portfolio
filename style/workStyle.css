@@ -8,24 +8,66 @@
 .portfolio-page-top-area {
   width: 1110px;
   height: auto;
-  margin: 0 auto;
-  background-color: antiquewhite;
+  margin: 50px auto;
+  overflow-x: hidden;
+  /* background-color: antiquewhite; */
 }
 
+.portfolio-page-top-row {
+  width: auto;
+  height: auto;
+}
+
+.portfolio-page-top-title {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #161616;
+}
+
+.portfolio-page-top-description {
+  position: absolute;
+  width: 540px;
+  height: 125px;
+  margin-top: 48px;
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #474747;
+  /* background-color: aliceblue; */
+}
+
+.portfolio-page-top-imgArea img {
+  width: 719px;
+  height: 535px;
+  padding-right: 0;
+}
+
+/* -------------------------------------------------------------------------- */
 /* portfolio tab area */
 
+.portfolio-tab-container {
+  max-width: 1110px;
+  height: auto;
+  margin: 0 0;
+  /* background-color: aqua; */
+}
+
 .portfolio-tabs {
-  width: 1110px;
+  width: 100%;
   height: auto;
   margin: 0 auto;
-  background-color: aqua;
+  /* background-color: rgb(224, 226, 228); */
 }
 
 .portfolio-tabs .portfolio-tab-header {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  margin: 20px 0;
   border-bottom: 2px solid #fc4949;
 }
 
@@ -62,10 +104,10 @@
 
 .portfolio-tab-content {
   width: 100%;
-  min-height: 400px;
+  height: auto;
   display: inline-block;
+  padding-top: 50px;
   padding-bottom: 50px;
-  background-color: antiquewhite;
 }
 
 .portfolio-tab-content-box {
@@ -74,4 +116,124 @@
 
 .portfolio-tab-content-box.active {
   display: block;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* card area */
+.portfolio-tab-content a:hover {
+  text-decoration: none;
+}
+/* right card */
+.portfolio-rigth-side-img-card {
+  width: auto;
+  height: 600px;
+  border-radius: 20px;
+  align-items: center;
+  background: #ffc6cf;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-rigth-side-img-card img {
+  position: absolute;
+  left: 0;
+}
+
+.portfolio-rigth-side-img-card-text-area {
+  max-width: 416px !important;
+  margin-left: 33px;
+}
+
+.portfolio-card-site-category {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3f2a45;
+}
+
+.portfolio-card-site-name {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+  color: #3f2a45;
+}
+
+.portfolio-card-site-description {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  padding-top: 30px;
+  color: #3f2a45;
+}
+
+.portfolio-card-site-tag-aera {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.portfolio-card-site-tag {
+  width: fit-content;
+  height: auto;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3f2a45;
+  background: #ffffff;
+}
+
+.portfolio-rigth-side-img-card-image-area {
+  margin-right: 33px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.portfolio-rigth-side-img-card-image-area img {
+  width: 100%;
+  height: auto;
+}
+
+/* left card */
+.portfolio-left-side-img-card {
+  width: auto;
+  height: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  align-items: center;
+  background: #7177d2;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-left-side-img-card img {
+  position: absolute;
+  right: 0;
+}
+
+.portfolio-left-side-img-card-text-area {
+  max-width: 416px !important;
+  margin-right: 5px;
+}
+
+.portfolio-left-side-img-card-image-area {
+  margin-left: 33px;
+  margin-right: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.portfolio-left-side-img-card-image-area img {
+  width: 100%;
+  height: auto;
 }
