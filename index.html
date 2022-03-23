@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- work page style sheet -->
-    <link rel="stylesheet" type="text/css" href="./style/workStyle.css" />
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
 
     <!-- boostrap cdn -->
     <link
@@ -16,11 +16,15 @@
       crossorigin="anonymous"
     />
 
+    <!-- scroll animation cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Work</title>
   </head>
 
   <body>
     <!-- portfolio page top area -->
+
     <div class="container portfolio-page-top-area">
       <div class="row portfolio-page-top-row">
         <div class="col portfolio-page-top-textArea">
@@ -36,7 +40,7 @@
 
         <div class="col portfolio-page-top-imgArea">
           <img
-            src="./asset/portfolio-main-image.png"
+            src="/img/portfolio-main-image.png"
             alt="asset/portfolio-main-image"
           />
         </div>
@@ -57,53 +61,53 @@
           <div class="portfolio-tab-content-box active" id="portfolio-tab-1">
             <!-- right side image card 1 -->
             <a href="">
-              <div class="row portfolio-rigth-side-img-card">
-                <img
-                  src="./asset/background_pattern.png"
-                  alt="background pattern"
-                />
+              <div class="first-portfolio-card" data-aos="fade-up">
+                <div class="row portfolio-rigth-side-img-card">
+                  <img
+                    src="img/background_pattern.png"
+                    alt="background pattern"
+                  />
 
-                <div class="col portfolio-rigth-side-img-card-text-area">
-                  <div class="row-4">
-                    <div class="portfolio-card-site-category">E-Learning</div>
-                    <div class="portfolio-card-site-name">Geoprageeth</div>
-                    <div class="portfolio-card-site-description">
-                      E-learning platform that can easily deliver video lessons
-                    </div>
+                  <div class="col portfolio-rigth-side-img-card-text-area">
+                    <div class="row-4">
+                      <div class="portfolio-card-site-category">E-Learning</div>
+                      <div class="portfolio-card-site-name">Geoprageeth</div>
+                      <div class="portfolio-card-site-description">
+                        E-learning platform that can easily deliver video
+                        lessons
+                      </div>
 
-                    <div class="portfolio-card-site-tag-aera">
-                      <div class="portfolio-card-site-tag">AngularJS</div>
-                      <div
-                        class="portfolio-card-site-tag"
-                        style="margin-left: 20px"
-                      >
-                        Python
+                      <div class="portfolio-card-site-tag-aera">
+                        <div class="portfolio-card-site-tag">AngularJS</div>
+                        <div
+                          class="portfolio-card-site-tag"
+                          style="margin-left: 20px"
+                        >
+                          Python
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col portfolio-rigth-side-img-card-image-area">
-                  <img
-                    src="./asset/Geoprageeth_2 1.png"
-                    alt="wesite card image"
-                  />
+                  <div class="col portfolio-rigth-side-img-card-image-area">
+                    <img
+                      src="/img/Geoprageeth_2 1.png"
+                      alt="wesite card image"
+                    />
+                  </div>
                 </div>
               </div>
             </a>
 
             <!-- left side image card 1 -->
-            <div class="row portfolio-left-side-img-card">
-              <img
-                src="./asset/background_pattern.png"
-                alt="background pattern"
-              />
+            <div class="row portfolio-left-side-img-card" data-aos="fade-right">
+              <img src="/img/background_pattern.png" alt="background pattern" />
 
               <div class="col portfolio-left-side-img-card-image-area">
-                <img src="./asset/Biomahesh.png" alt="wesite card image" />
+                <img src="/img/Biomahesh.png" alt="wesite card image" />
               </div>
 
-              <div class="col portfolio-left-side-img-card-text-area">
+              <div class="col-sm-12 portfolio-left-side-img-card-text-area">
                 <div class="row-4">
                   <div class="portfolio-card-site-category">E-Learning</div>
                   <div class="portfolio-card-site-name">Biomahesh</div>
@@ -127,36 +131,39 @@
 
           <div class="portfolio-tab-content-box" id="portfolio-tab-2">
             <a href="">
-              <div class="row portfolio-rigth-side-img-card">
-                <img
-                  src="./asset/background_pattern.png"
-                  alt="background pattern"
-                />
+              <div class="first-portfolio-card" data-aos="fade-up">
+                <div class="row portfolio-rigth-side-img-card mobile">
+                  <img
+                    src="/img/background_pattern.png"
+                    alt="background pattern"
+                  />
 
-                <div class="col portfolio-rigth-side-img-card-text-area">
-                  <div class="row-4">
-                    <div class="portfolio-card-site-category">
-                      Travel & Local
-                    </div>
-                    <div class="portfolio-card-site-name">Flights</div>
-                    <div class="portfolio-card-site-description">
-                      E-learning platform that can easily deliver video lessons
-                    </div>
+                  <div class="col portfolio-rigth-side-img-card-text-area">
+                    <div class="row-4">
+                      <div class="portfolio-card-site-category">
+                        Travel & Local
+                      </div>
+                      <div class="portfolio-card-site-name">Flights</div>
+                      <div class="portfolio-card-site-description">
+                        E-learning platform that can easily deliver video
+                        lessons
+                      </div>
 
-                    <div class="portfolio-card-site-tag-aera">
-                      <div class="portfolio-card-site-tag">React Native</div>
-                      <div
-                        class="portfolio-card-site-tag"
-                        style="margin-left: 20px"
-                      >
-                        Firebase
+                      <div class="portfolio-card-site-tag-aera">
+                        <div class="portfolio-card-site-tag">React Native</div>
+                        <div
+                          class="portfolio-card-site-tag"
+                          style="margin-left: 20px"
+                        >
+                          Firebase
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col portfolio-rigth-side-img-card-image-area">
-                  <img src="./asset/flight.png" alt="wesite card image" />
+                  <div class="col portfolio-rigth-side-img-card-image-area">
+                    <img src="/img/flight.png" alt="wesite card image" />
+                  </div>
                 </div>
               </div>
             </a>
@@ -182,6 +189,15 @@
       crossorigin="anonymous"
     ></script>
 
-    <script type="text/javascript" src="./javaScript/workScript.js"></script>
+    <!-- script file -->
+    <script src="/js/index.js"></script>
+
+    <!-- scroll cdn script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
   </body>
 </html>

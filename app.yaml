@@ -1,16 +1,44 @@
-runtime: python39 # or another supported version
+runtime: python27
+threadsafe: true
+api_version: 1
 
-instance_class: F2
+handlers: # static then dynamic
+  - url: /js
+    static_dir: static/js
 
-env_variables:
-  BUCKET_NAME: "example-gcs-bucket"
+  - url: /img
+    static_dir: static/img
 
-handlers:
-  # Matches requests to /images/... to files in static/images/...
-  - url: /images
-    static_dir: static/images
+  - url: /css
+    static_dir: static/bootstrap/css
+
+  - url: /partials
+    static_dir: static/partials
 
   - url: /
-    static_files: work.html
-    upload: work\.html
+    static_files: index.html
+    upload: index\.html
     secure: always
+
+builtins:
+  - deferred: on
+
+libraries:
+  - name: webapp2
+    version: latest
+
+  - name: ssl
+    version: 2.7.11
+
+  - name: endpoints
+    version: latest
+
+  # pycrypto library used for OAuth2 (req'd for authenticated APIs)
+  - name: pycrypto
+    version: 2.6
+
+env_variables:
+  BUCKET_NAME: "dasunwebdevelop7.appspot.com"
+  GAE_USE_SOCKETS_HTTPLIB: "true"
+  ENDPOINTS_SERVICE_NAME: "nirvanacloudsweb187.appspot.com"
+  ENDPOINTS_SERVICE_VERSION: "2022-01-01r0"
