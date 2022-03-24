@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* portfolio page top area  */
+
+.portfolio-page-top-area {
+  width: 1110px;
+  height: auto;
+  margin: 50px auto;
+  overflow-x: hidden;
+  background-color: #7177d2;
+}
+
+.portfolio-page-top-row {
+  width: auto;
+  height: auto;
+}
+
+.portfolio-page-top-title {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #161616;
+  animation: moveleft 1s ease-in;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveleft {
+  0% {
+    transform: translateX(-100px);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.portfolio-page-top-description {
+  position: absolute;
+  width: 540px;
+  height: 125px;
+  margin-top: 48px;
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #474747;
+  animation: moveup 1s ease-in;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveup {
+  0% {
+    transform: translateY(100px);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.portfolio-page-top-imgArea {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.portfolio-page-top-imgArea img {
+  width: 719px;
+  height: auto;
+  padding-right: 0;
+  animation: zoomin 1s ease-in;
+  /* animation-delay: 2s; */
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomin {
+  0% {
+    transform: scale(0.5);
+    visibility: visible;
+  }
+  100% {
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* portfolio tab area */
+
+.portfolio-tab-container {
+  max-width: 1110px;
+  height: auto;
+  margin: 0 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-snap-align: start;
+  /* background-color: aqua; */
+}
+
+.portfolio-tabs {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  /* background-color: rgb(224, 226, 228); */
+}
+
+.portfolio-tabs .portfolio-tab-header {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  border-bottom: 2px solid #fc4949;
+}
+
+.portfolio-tabs .portfolio-tab-header li {
+  position: relative;
+  display: inline;
+  padding: 15px 55px;
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.portfolio-tab-header li::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: -3%;
+  width: 0%;
+  height: 5px;
+  border-radius: 30px;
+  background: #fc4949;
+  transition: width 0.8s ease;
+}
+
+.portfolio-tab-header li.active::after {
+  width: 100%;
+}
+
+.portfolio-tab-header li:hover {
+  color: #fc4949;
+}
+
+.portfolio-tab-content {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.portfolio-tab-content-box {
+  display: none;
+}
+
+.portfolio-tab-content-box.active {
+  display: block;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* card area */
+
+/* right card */
+.portfolio-rigth-side-img-card {
+  width: auto;
+  height: 570px;
+  border-radius: 20px;
+  align-items: center;
+  background: #ffc6cf;
+  background-image: url("/static/img/background_pattern.png");
+  transition: transform 0.4s;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-rigth-side-img-card-image-area {
+  margin-right: 33px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.portfolio-rigth-side-img-card-text-area {
+  max-width: 416px !important;
+  margin-left: 33px;
+}
+
+.portfolio-card-site-category {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3f2a45;
+}
+
+.portfolio-card-site-name {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+  color: #3f2a45;
+}
+
+.portfolio-card-site-description {
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  padding-top: 30px;
+  color: #3f2a45;
+}
+
+.portfolio-card-site-tag-aera {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.portfolio-card-site-tag {
+  width: fit-content;
+  height: auto;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-family: "Aileron";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3f2a45;
+  background: #ffffff;
+}

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- work page style sheet -->
-    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/index.css" />
 
     <!-- boostrap cdn -->
     <link
@@ -25,7 +25,7 @@
   <body>
     <!-- portfolio page top area -->
 
-    <div class="container portfolio-page-top-area">
+    <div class="container">
       <div class="row portfolio-page-top-row">
         <div class="col portfolio-page-top-textArea">
           <div class="row portfolio-page-top-title">
@@ -39,10 +39,10 @@
         </div>
 
         <div class="col portfolio-page-top-imgArea">
-          <img
-            src="/img/portfolio-main-image.png"
+          <!-- <img
+            src="static/img/portfolio-main-image.png"
             alt="asset/portfolio-main-image"
-          />
+          /> -->
         </div>
       </div>
     </div>
@@ -59,12 +59,12 @@
 
         <div class="col portfolio-tab-content">
           <div class="portfolio-tab-content-box active" id="portfolio-tab-1">
-            <!-- right side image card 1 -->
-            <a href="">
-              <div class="first-portfolio-card" data-aos="fade-up">
-                <div class="row portfolio-rigth-side-img-card">
+            <!-- right side image card 1 start-->
+            <a href="#">
+              <div data-aos="fade-right">
+                <div class="row card-bg-none portfolio-rigth-side-img-card">
                   <img
-                    src="img/background_pattern.png"
+                    src="/img/background_pattern.png"
                     alt="background pattern"
                   />
 
@@ -98,40 +98,93 @@
                 </div>
               </div>
             </a>
+            <!-- right side image card 1 end -->
 
-            <!-- left side image card 1 -->
-            <div class="row portfolio-left-side-img-card" data-aos="fade-right">
-              <img src="/img/background_pattern.png" alt="background pattern" />
+            <!-- left side image card 2 start -->
+            <a href="#">
+              <div data-aos="fade-left">
+                <div class="row portfolio-left-side-img-card">
+                  <img
+                    src="/img/background_pattern.png"
+                    alt="background pattern"
+                  />
 
-              <div class="col portfolio-left-side-img-card-image-area">
-                <img src="/img/Biomahesh.png" alt="wesite card image" />
-              </div>
-
-              <div class="col-sm-12 portfolio-left-side-img-card-text-area">
-                <div class="row-4">
-                  <div class="portfolio-card-site-category">E-Learning</div>
-                  <div class="portfolio-card-site-name">Biomahesh</div>
-                  <div class="portfolio-card-site-description">
-                    E-learning platform that can easily deliver video lessons
+                  <div class="col portfolio-left-side-img-card-image-area">
+                    <img src="/img/Biomahesh.png" alt="wesite card image" />
                   </div>
 
-                  <div class="portfolio-card-site-tag-aera">
-                    <div class="portfolio-card-site-tag">AngularJS</div>
-                    <div
-                      class="portfolio-card-site-tag"
-                      style="margin-left: 20px"
-                    >
-                      Python
+                  <div class="col-sm-12 portfolio-left-side-img-card-text-area">
+                    <div class="row-4">
+                      <div class="portfolio-card-site-category">E-Learning</div>
+                      <div class="portfolio-card-site-name">Biomahesh</div>
+                      <div class="portfolio-card-site-description">
+                        E-learning platform that can easily deliver video
+                        lessons
+                      </div>
+
+                      <div class="portfolio-card-site-tag-aera">
+                        <div class="portfolio-card-site-tag">AngularJS</div>
+                        <div
+                          class="portfolio-card-site-tag"
+                          style="margin-left: 20px"
+                        >
+                          Python
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
+            <!-- left side image card 2 end -->
+
+            <!-- right side image card 3 start-->
+            <a href="#">
+              <div data-aos="fade-right">
+                <div
+                  class="row card-bg-none portfolio-rigth-side-img-card card-3"
+                >
+                  <img
+                    src="/img/background_pattern.png"
+                    alt="background pattern"
+                  />
+
+                  <div class="col portfolio-rigth-side-img-card-text-area">
+                    <div class="row-4">
+                      <div class="portfolio-card-site-category">E-Learning</div>
+                      <div class="portfolio-card-site-name">
+                        GeNIUS Chemistry Academy
+                      </div>
+                      <div class="portfolio-card-site-description">
+                        E-learning platform that can easily deliver video
+                        lessons
+                      </div>
+
+                      <div class="portfolio-card-site-tag-aera">
+                        <div class="portfolio-card-site-tag">AngularJS</div>
+                        <div
+                          class="portfolio-card-site-tag"
+                          style="margin-left: 20px"
+                        >
+                          Python
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col portfolio-rigth-side-img-card-image-area">
+                    <img src="/img/chem.png" alt="wesite card image" />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- right side image card 3 end -->
           </div>
 
           <div class="portfolio-tab-content-box" id="portfolio-tab-2">
+            <!-- left side mobile image card 1 start -->
             <a href="">
-              <div class="first-portfolio-card" data-aos="fade-up">
+              <div class="first-portfolio-card x" data-aos="fade-up">
                 <div class="row portfolio-rigth-side-img-card mobile">
                   <img
                     src="/img/background_pattern.png"
@@ -167,6 +220,45 @@
                 </div>
               </div>
             </a>
+            <!-- left side mobile image card 1 start -->
+
+            <!-- left side image card 2 start -->
+            <a href="#">
+              <div data-aos="fade-right">
+                <div class="row portfolio-left-side-img-card mobile mob-card-2">
+                  <img
+                    src="/img/background_pattern.png"
+                    alt="background pattern"
+                  />
+
+                  <div class="col portfolio-left-side-img-card-image-area">
+                    <img src="/img/Restaurant.png" alt="wesite card image" />
+                  </div>
+
+                  <div class="col-sm-12 portfolio-left-side-img-card-text-area">
+                    <div class="row-4">
+                      <div class="portfolio-card-site-category">E-Learning</div>
+                      <div class="portfolio-card-site-name">Biomahesh</div>
+                      <div class="portfolio-card-site-description">
+                        E-learning platform that can easily deliver video
+                        lessons
+                      </div>
+
+                      <div class="portfolio-card-site-tag-aera">
+                        <div class="portfolio-card-site-tag">AngularJS</div>
+                        <div
+                          class="portfolio-card-site-tag"
+                          style="margin-left: 20px"
+                        >
+                          Python
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- left side image card 2 end -->
           </div>
         </div>
       </div>
